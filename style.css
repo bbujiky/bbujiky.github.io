@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fffaf1;
+  color: #35271f;
+  font-family: Arial, "Apple SD Gothic Neo", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 27px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.site-header,
+.site-footer {
+  background-color: #35271f;
+  color: #fffaf1;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 3%;
+}
+
+.site-header nav a {
+  display: inline-block;
+  margin: 0 4px;
+  font-size: 13px;
+}
+
+.logo,
+.site-header nav a,
+.feature,
+.shop-nav a,
+.site-footer a {
+  text-decoration: none;
+}
+
+.logo,
+.arrow,
+.shop-nav,
+.site-header nav {
+  font-weight: bold;
+}
+
+.site-header .current,
+.site-header a:hover,
+.site-footer a:hover,
+.shop-nav a:hover {
+  text-decoration: underline;
+}
+
+.label,
+.page-name {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+/* 대표 이미지 위에 어두운 배경과 제목을 배치합니다. */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  padding: 0 6%;
+  background-color: #603c2a;
+  color: white;
+  text-align: center;
+}
+
+.shops-hero {
+  height: 320px;
+}
+
+.hero img,
+.hero-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero img,
+.feature img,
+.shop-photo img {
+  object-fit: cover;
+}
+
+.hero-shade {
+  background-color: rgba(33, 18, 9, 0.55);
+}
+
+.hero-copy {
+  position: relative;
+}
+
+.hero-copy h1 {
+  margin-bottom: 12px;
+}
+
+.section,
+.intro {
+  padding: 45px 6%;
+}
+
+.section h2,
+.year,
+.shop-copy .label,
+.wordmark {
+  color: #8f3e2f;
+}
+
+.intro {
+  background-color: #8f3e2f;
+  color: #fffaf1;
+}
+
+.home-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.intro-card {
+  width: 56%;
+  padding: 16px;
+  background-color: #fffaf1;
+  color: #35271f;
+}
+
+.intro-card h3,
+.shop-copy h3 {
+  margin-bottom: 8px;
+}
+
+.arrow {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* 카드 너비와 간격은 주차별 Flexbox 실습과 같은 방식으로 지정합니다. */
+.home-cards,
+.shop-grid,
+.split,
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-cards,
+.shop-grid,
+.footer-grid {
+  gap: 12px;
+}
+
+.feature {
+  display: block;
+  width: 32%;
+  background-color: #49533e;
+  color: #fffaf1;
+}
+
+.feature img {
+  height: 24vw;
+  background-color: #e8d8c3;
+}
+
+.feature div {
+  padding: 10px;
+}
+
+.feature:hover h3 {
+  text-decoration: underline;
+}
+
+.split .feature {
+  width: 50%;
+}
+
+.split .feature div {
+  padding: 16px 10%;
+}
+
+.split .feature:first-child {
+  background-color: #e8d8c3;
+  color: #35271f;
+}
+
+.split .feature:last-child {
+  background-color: #8f3e2f;
+}
+
+.timeline,
+.process ol {
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 14px;
+  background-color: #f7f1e6;
+}
+
+.year {
+  width: 110px;
+  font-weight: bold;
+}
+
+.timeline li div {
+  width: 76%;
+}
+
+.timeline p {
+  margin-top: 4px;
+}
+
+.process {
+  background-color: #e8d8c3;
+}
+
+.process ol {
+  padding: 14px;
+  background-color: #fffaf1;
+  text-align: center;
+}
+
+.process li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.process p {
+  margin-top: 9px;
+}
+
+.shop-nav {
+  padding-top: 16px;
+  padding-bottom: 5px;
+}
+
+.shop-nav a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.shop-card {
+  width: 49%;
+  background-color: #f7f1e6;
+}
+
+.shop-photo img {
+  height: 34vw;
+  background-color: #e8d8c3;
+}
+
+.photo-caption {
+  padding: 5px 12px 0;
+  font-size: 12px;
+}
+
+.shop-copy {
+  padding: 12px;
+}
+
+.sources {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 14px;
+}
+
+.sources h2 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+.sources ul {
+  margin-top: 6px;
+  padding-left: 20px;
+}
+
+.wordmark {
+  padding: 18px 0;
+  font-size: 18vw;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+.site-footer {
+  padding: 30px 6%;
+}
+
+.site-footer .logo {
+  font-size: 20px;
+}
+
+.footer-grid {
+  margin: 14px 0 22px;
+  font-size: 13px;
+}
+
+.footer-grid div {
+  width: 32%;
+}
+
+.footer-grid h2 {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.footer-grid a {
+  display: block;
+}
